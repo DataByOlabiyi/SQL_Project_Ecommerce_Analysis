@@ -33,10 +33,9 @@ SQL queries? Check them out here: [Data_Cleaning_sql folder](/project_sql/Data_C
 ## **Exploratory Data Analysis (EDA)**
 The exploratory analysis revealed several insights:
 
-SQL queries? Check them out here: [Exploratory_Data_Analysis(EDA) folder](/project_sql/Exploratory_Data_Analysis_(EDA)/)
+SQL queries? Check them out here: [Exploratory_Data_Analysis(EDA) folder](/project_sql/Exploratory_Data_Analysis(EDA)/)
 
 ## 1. **Customer Distribution** 
-SQL queries? Check them out here: [1_Customer_distribution file](/project_sql/Exploratory_Data_Analysis_(EDA)/1_Customer_distribution)
 
 **Customer distribution by state**
 
@@ -86,7 +85,6 @@ São Paulo has the largest number of customers (15,540), more than twice that of
 
 
 ### 2. **Order Patterns**
-SQL queries? Check them out here: [2_Order_Patterns file](/project_sql/Exploratory_Data_Analysis(EDA)/2_Order_Patterns)
 
 **Percentage of Delivered Orders**
 
@@ -147,7 +145,6 @@ Delivery times vary significantly between states, with `São Paulo` (SP) having 
 
 
 ### 3. **Product Performance**
-SQL queries? Check them out here: [3_Product_Performance file](/project_sql/Exploratory_Data_Analysis(EDA)/3_Product_Performance)
 
 **Most popular product categories.**
 
@@ -257,7 +254,7 @@ FROM Orders o
 GROUP BY DATE_FORMAT(o.order_purchase_timestamp, '%Y-%m')
 ORDER BY month;
 ```
-![Monthly Sales Trends](assets/Monthly%20Sales%20Trends.png)
+![Monthly Sales Trends](/assets/MonthlySalesTrends.png)
 
 
 # What I Learned
