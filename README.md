@@ -147,6 +147,7 @@ Delivery times vary significantly between states, with `São Paulo` (SP) having 
 
 
 ### 3. **Product Performance**
+SQL queries? Check them out here: [3_Product_Performance file](/project_sql/Exploratory_Data_Analysis(EDA)/3_Product_Performance)
 
 **Most popular product categories.**
 
@@ -177,7 +178,10 @@ The average price of products varies significantly across categories. The most e
 ```
 
 ## Other Analysis
+
 **Deeper analyses included:**
+
+SQL queries? Check them out here: [other_analysis file](/project_sql/Other_Analysis/other_analysis.sql)
 
 **High-Value Customers (Top 10 by Spending)**
 
@@ -265,7 +269,6 @@ ORDER BY month;
 
 ## Problem-Solving
 - **Handling Real-World Data**: I tackled challenges like inconsistent data formats, missing values, and large datasets. For example, I standardized date formats and ensured data integrity across tables.
-- **Optimizing Queries**: I improved query performance by indexing key columns and avoiding nested subqueries, ensuring efficient data retrieval.
 
 ## Business Insights
 - **Customer Behavior**: I identified high-value customers and repeat purchasers, which can help the company focus on customer retention and loyalty programs.
