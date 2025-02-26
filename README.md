@@ -325,8 +325,3 @@ ORDER BY month;
 7. **Monitor Sales Trends**:
    - Continuously analyze sales data to identify emerging trends and adjust strategies accordingly.
    - Investigate the decline in sales in late 2018 and address potential issues affecting demand.
-#   S Q L _ P r o j e c t _ E c o m m e r c e _ A n a l y s i s 
- 
- #   S Q L _ P r o j e c t _ E c o m m e r c e _ A n a l y s i s 
- 
- 
