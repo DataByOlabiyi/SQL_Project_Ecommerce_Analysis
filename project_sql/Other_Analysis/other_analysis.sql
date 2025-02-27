@@ -35,21 +35,6 @@ GROUP BY p.product_category_name
 ORDER BY total_revenue DESC
 LIMIT 10;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -- Monthly sales trends
 SELECT DATE_FORMAT(o.order_purchase_timestamp, '%Y-%m') AS month, COUNT(*) AS order_count
 FROM Orders o

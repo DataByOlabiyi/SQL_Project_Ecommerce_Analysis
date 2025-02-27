@@ -7,7 +7,7 @@ GROUP BY p.product_category_name
 ORDER BY order_count DESC;
 
 
--- Calculate average price per product category
+-- Average price per product category
 SELECT p.product_category_name, AVG(oi.price) AS avg_price
 FROM Order_Items oi
 JOIN Products p ON oi.product_id = p.product_id

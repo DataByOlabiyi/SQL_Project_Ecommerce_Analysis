@@ -101,7 +101,7 @@ São Paulo has the largest number of customers (15,540), more than twice that of
     ORDER BY order_count DESC;
 ```
 
-| order_status  | order_count | status_percentage |
+| Order Status  | Order Count | Status Percentage |
 |--------------|------------|------------------|
 | delivered    | 96478      | 97.02034        |
 | shipped      | 1107       | 1.11322         |
@@ -141,6 +141,26 @@ Delivery times vary significantly between states, with `São Paulo` (SP) having 
 |---------------|----------------------|
 | São Paulo            | 8 days, 16 hours, 49 min  |
 | Roraima            | 29 days, 8 hours, 12 min  |
+
+
+**Total Revenue for Each Sellers.**
+
+The top 10 sellers are highly profitable, with the top seller over 229,000 in total sales. There is a steady decrease in revenue for the top sellers, but the spread is competitive. Knowing these trends can assist in prioritizing partnerships with high-selling sellers.
+
+**SQL Query**:
+```sql
+    SELECT oi.seller_id, SUM(oi.price) AS total_revenue
+    FROM Order_Items oi
+    GROUP BY oi.seller_id
+    ORDER BY total_revenue DESC
+    LIMIT 10;
+```
+| Seller Id                               | Total Revenue |
+|-----------------------------------------|--------------|
+| 4869f7a5cfa277a7dca6462dcf3b52b2        | 229472.63    |
+| 53243585a1d6dc2643021fd1853d8905        | 222776.05    |
+| 4a3ca9315b744c9ef8e9374361493884        | 200472.92    |
+
 
 
 
@@ -235,7 +255,7 @@ GROUP BY p.product_category_name
 ORDER BY total_revenue DESC
 LIMIT 10;
 ```
-| product_category_name  | total_revenue      | total_orders |
+| Product Category Name  | Total Revenue      | Total Orders |
 |------------------------|--------------------|--------------|
 | beleza_saude          | 1258681.33         | 8836         |
 | relogios_presentes    | 1205005.68         | 5624         |

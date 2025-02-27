@@ -1,6 +1,6 @@
 SELECT * FROM orders LIMIT 1000;
 
--- Calculate the percentage of delivered orders
+-- Percentage of delivered orders
 SELECT 
     order_status, 
     COUNT(*) AS order_count, 
@@ -9,7 +9,7 @@ FROM orders
 GROUP BY order_status
 ORDER BY order_count DESC;
 
--- Calculate average delivery time by state
+-- Average delivery time by state
 SELECT 
     c.customer_state, 
     CONCAT(
@@ -28,6 +28,14 @@ GROUP BY c.customer_state
 ORDER BY avg_delivery_time DESC;
 
 
+-- Total revenue for each seller
+SELECT oi.seller_id, SUM(oi.price) AS total_revenue
+FROM Order_Items oi
+GROUP BY oi.seller_id
+ORDER BY total_revenue DESC
+LIMIT 10;
+
+
 -- Distribution of order
 SELECT order_status, 
 COUNT(*) AS order_count
@@ -35,11 +43,4 @@ FROM Orders
 GROUP BY order_status
 ORDER BY order_count DESC;
 
-
--- Calculate total revenue for each seller
-SELECT oi.seller_id, SUM(oi.price) AS total_revenue
-FROM Order_Items oi
-GROUP BY oi.seller_id
-ORDER BY total_revenue DESC
-LIMIT 10;
 
